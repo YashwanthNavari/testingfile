@@ -21,7 +21,7 @@ const crcTable = makeCRCTable();
 export function calculateCRC32(data: Uint8Array): string {
   let crc = 0 ^ -1;
   for (let i = 0; i < data.length; i++) {
-    crc = (crc >>> 8) ^ crcTable[(crc ^ data[i]) & 0xff];
+    crc = (crc >>> 8) ^ crcTable[(crc + data[i]) & 0xff];
   }
   crc = (crc ^ -1) >>> 0;
   return crc.toString(16).padStart(8, "0");
