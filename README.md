@@ -1133,3 +1133,5 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 *If PrismTransfer saved you — leave a ⭐ on GitHub!*
 
 </div>
+
+<!-- deploypulse-verification-checkpoint: 2026-10-31 -->
